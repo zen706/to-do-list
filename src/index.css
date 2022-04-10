@@ -1,13 +1,151 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+  text-transform: capitalize;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
 }
+
+.main {
+  min-height: 100vh;
+  /* margin: 0 auto; */
+  display: grid;
+  place-items: center;
+}
+.container {
+  /* height: ; */
+  max-width: 480px;
+  width: 90vw;
+  /* margin: 0 auto; */
+  padding: 2rem 2rem 2rem 2rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  top: 5rem;
+
+}
+
+.headline {
+  margin:0 ;
+  padding: 0;
+  letter-spacing: 3px;
+}
+
+.to-do-form {
+  display: flex;
+  padding: 1rem;
+   /* can't long . why*/
+  width: 100%; 
+
+  justify-content: center;
+}
+.to-do-container {
+  width: 100%;
+  padding: 1rem;
+}
+.to-do {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding-left:10px;
+  padding-right: 5px;
+  cursor: pointer;
+  transition: all 1s;
+  
+}
+.to-do.done{
+  text-decoration: line-through;
+}
+.to-do:hover {
+  background-color: #eee; 
+}
+
+.to-do-title {
+ 
+}
+.check {
+ width: 1rem;
+ font-size: 1.25rem;
+ margin-right: 1rem;
+}
+.title-container {
+  display: flex;
+  align-items: center;
+  width: 100%;  
+}
+.btn-container {
+  display: flex;
+}
+.alert {
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+}
+.none {
+ /* background-color: transparent; */
+ /* color: transparent; */
+}
+.alert-danger {
+  background-color: rgba(243, 89, 28, 0.89);
+}
+.alert-success {
+  background-color: rgba(122, 216, 33, 0.726);
+}
+.btn {
+  border: transparent;
+  background-color: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+  
+  
+}
+
+.submit-btn {
+  background-color: rgb(25, 200, 216);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+  transition: all 1s;
+}
+.submit-btn:hover {
+  background-color: rgb(17, 98, 105);
+  color: #eee;
+}
+
+.clear-btn {
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 1s;
+}
+.clear-btn:hover {
+  background-color: #eee;
+}
+
+input {
+  font-size: 1rem;
+  padding-left: 10px;
+}
+input:focus {
+  outline: none;
+
+}
+
+.edit-btn {
+  color: rgba(122, 216, 33, 0.726);
+  font-size: 1.5rem;
+}
+.delete-btn {
+  color:  rgba(243, 89, 28, 0.89);
+  font-size: 1.5rem;
+}
+
